@@ -62,3 +62,20 @@ clear.onclick =() => {
     localStorage.clear();
     document.location.reload();
 }
+//-------------------------------------------------------------------------------------------
+//----------------------------------programation inpérative----------------------------------
+
+function isPair(number) {
+  if (number%2 ===0) {
+    console.log(number +' est pair')
+  }else{
+    console.log(numer + ' est impair');
+  }
+}
+
+let count = 1 ;
+while (count <= 10){
+
+  isPair(count);
+  count = count + 1 ;
+}
