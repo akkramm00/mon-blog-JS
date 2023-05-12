@@ -75,7 +75,42 @@ function isPair(number) {
 
 let count = 1 ;
 while (count <= 10){
-
+//appeler la fonction"isPair" pour céer le branchement
   isPair(count);
   count = count + 1 ;
 }
+
+// le pseudoCode:
+//definit count = 1 ;
+//tant que count est inférieur ou égale à 10;
+//appeler la fonction isPair ;
+//ajouter 1 à count 
+//fin de la boucle
+//--------------------------------------------------------------------------
+//La programmation impérative représente les opérations de base communes à 
+//de nombreux langages de programmation : la séquence d'exécution, l'assignation
+// de variables, les conditions, les boucles et les branchements.
+
+//---------------la programation orienté objet-------------------------------------
+
+class User{
+  constructor(email , username , password)
+  {
+    this.email = email ;
+    this.username = username ;
+    this.password = password ;
+  }
+  subscribe(){
+    //on insert les informations en bases de données
+    console.log('utilisateur' + this.username + 'inscrit');
+  }
+  login(){
+    //verification en base de données
+    console.log('bonjour' + this.username);
+  }
+}
+//----------------------------créer des vrais utilisateurs---------------------------
+
+let laure = new User('laure@mail.com' , laure , pa445word);
+laure.subscribe();
+laure.login();
